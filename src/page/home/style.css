@@ -1,0 +1,183 @@
+.video>video{
+    width: 100%;
+    height: 100%;
+}
+
+.video{
+    width: 100%;
+    background: url("http://localhost:3000/video.mp4.mov");
+    position: relative;
+    top: 0;
+    color: #FAFAFA;
+    /* height: clamp(400px, 100vw, 1300px); */
+    background-size: cover;
+}
+
+.video>div{
+    bottom: 0;
+    height: 90%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.video>div>div>h5{
+    font-size: clamp(15px, 5vw, 70px);
+    font-weight: bold;
+}
+
+.video>div>div>p{
+    font-size: clamp(10px, 5vw, 35px);
+}
+
+.video>div>div{
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    /* gap: 20px; */
+}
+
+.video>div>span{
+    width: 100%;
+    display: grid;
+    justify-content: space-evenly;
+    color: #0f17b8;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
+}
+
+.video>div>span>div{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    gap: 20px;
+    border-left: 1px solid ;
+    padding-left: 10px;
+}
+
+main{
+    width: 100%;
+    margin-top: -6px;
+    background: #deadda;
+    background-color: #3e63e1;
+    text-align: center;
+    padding: 30px;
+}
+
+main>div{
+    
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+main>div>div{
+    width: clamp(200px, 100%, 500px);
+    /* height: clamp(400px, 100vw, 650px); */
+    border-radius: 10px;
+    background: #bad6ed;
+    color: #FAFAFA;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #1216b0;
+    text-align: left;
+    gap: 5px;
+}
+
+main>div>div>span{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.wishlist{
+    position: relative;
+    display: inline-block;
+    fill: #deadda(0,0,0,0);
+    stroke: #1216b0;
+    stroke-width: 1.5px;
+    transition: fill 250ms;
+    cursor: pointer;
+}
+
+.dash{
+    width: 100%;
+    border-top: 2px solid #1216b0;
+    border-radius:10px ;
+    margin-bottom: 5px;
+}
+
+.productbutton {
+	background-color:#1216b0;
+    border: 2px solid #1216b0;
+	border-radius:0px 15px 0px 15px;
+	cursor:pointer;
+	color:#fafafa;
+	font-family:Arial;
+    text-decoration: none;
+	padding: 5px 15px;
+    transition: .5s;
+    font-family: cursive;
+}
+
+.productbutton:hover {
+	background: none;
+    color: #FAFAFA;
+    border-radius:15px 0px 15px 0px;
+}
+
+main>h1{
+    font-size: clamp(20px, 5vw, 70px);
+    color: #fafafa;
+}
+
+.hi{
+    display: flex;
+    gap:50px ;
+}
+
+h1,h2, h3,p,h5{
+   font-size: clamp(10px, 5vw, 25px);
+   font-family: cursive;
+}
+div>div>p{
+  font-size:  clamp(10px, 5vw, 20px);
+}
+.wishlist{
+    position: relative;
+    display: inline-block;
+    fill:none;
+    stroke:white;
+    stroke-width: 1.5px;
+    transition: fill 250ms;
+    cursor: pointer;
+}
+#wi{
+    position: relative;
+    display: inline-block;
+    fill:white;
+    stroke:white;
+    stroke-width: 1.5px;
+    transition: fill 250ms;
+    cursor: pointer;
+}
+
+
+@media (max-width:617px){
+    .video>div>span{
+        display: none;
+    }
+    .video>.vid{
+        display: none;
+    }
+    .df1>p,h5{
+            display: none;
+    }
+}

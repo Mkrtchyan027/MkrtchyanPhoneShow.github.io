@@ -1,0 +1,264 @@
+*{
+    font-family: cursive;
+}
+.menu {
+    width: 100%;
+    background: #deadda;
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #FAFAFA;
+    background: #3e63e1;
+}
+
+.menu>div{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.menu>span{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.menu button {  
+    display: flex;
+	background-color:#1216b0;
+    border: 1px solid #1216b0;
+	border-radius:30px;
+	cursor:pointer;
+	color:#fafafa;
+	font-family:Arial;
+	padding: 5px 15px;
+    transition: .5s;
+    font-family: cursive;
+}
+.menu button:hover {
+    
+	background: none;
+    border: 1px solid #FAFAFA;
+}
+
+.menu li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.menu a {
+    color: rgb(237, 237, 237);
+    text-decoration: none;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.user>div{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuu{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    list-style-type: none;
+    margin: 5px 0;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid grey;
+    z-index: 2;
+    width: 150px;
+}
+
+.menuu>li {
+    margin: 0;
+    transition: 1s;
+}
+/* .menuu>.menu-item :hover{
+    background: #1216b0;
+    color: white;
+    border: 1px solid #1216b0;
+    border-radius: 25px;
+} */
+
+.menuu>li:hover {
+    transition: 0.5s;
+    color:white;
+    background: #1216b0;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.menuu>li>a {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 5px;
+    margin: 0;
+    font: inherit;
+    cursor: pointer;
+}
+
+.search>span{
+    display: flex;
+}
+.search>span:hover :is(button){
+    background: none;
+}
+.search>span:hover :is(button, input){
+    border: 1px solid #fafafa;
+}
+
+.search>span>button{
+    border-radius: 0px 0px 0px 0px;   
+}
+
+.search>span>input{
+    border-radius: 0px 15px 0px 15px;
+    padding: 4px 4px 4px 10px;
+    border: 1px solid #1216b0;
+    background: none;
+    transition: 0.5s;
+}
+
+.search>span>input::placeholder{
+    color: #fafafa;
+}
+.search>span>input:hover{
+    border-radius: 15px 0px 15px 0px;
+}
+
+.menuu{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 10px;
+    width:150px;
+    height: 270px;
+    
+}
+.menu-item{
+    border:1px solid #1216b0;
+    border-radius: 10px;
+    color: #1216b0;
+}
+
+.subfilter{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    top: 30px;
+    background-color: aliceblue;
+    z-index: 25;
+    color: #1216b0;
+    padding: 10px 20px;
+    border-radius:15px ;
+    border: 1px solid #1216b0;
+}
+.filter{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15%;
+}
+
+.subfilter>.btnfilter{
+    transform: scale(150px);
+    color: black ;
+    background: #1216b0;
+    color: white;
+}
+.btnfilter{
+    background: #1216b0;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+.filter:hover .btnfilter{
+    transition: 0.5s;
+    color:white;
+    background: #1216b0;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+.ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    gap: 20px;
+}
+
+.vg2{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bn2{
+    display: flex;
+}
+.user27{
+    display: flex;
+}
+.sub{
+    font-family: cursive;
+}
+/* h1,h2, h3,p,h5,h6{
+    font-family: cursive;
+ } */
+
+
+@media all and (max-width:617px){
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        gap:10px;
+
+    }
+    .menu>.sp1{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .li{
+        display: flex;
+        justify-content: center;
+        align-items: center ;
+    }
+    .menu>button{
+        font-size: 10px;
+    }
+    .ul{
+        display: flex;
+        flex-direction:row-reverse;
+    }
+    .subfilter{
+        width: 150px;
+        height: 200px;
+        font-size: 15px;
+    }
+    .inp1{
+        width: 100px;
+        height:5px;
+        font-size: 10px;
+    }
+}

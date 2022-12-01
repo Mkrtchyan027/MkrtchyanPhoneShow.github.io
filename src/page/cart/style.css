@@ -1,0 +1,18 @@
+.cart{
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    border: 1px solid white;
+    text-align: center;
+}
+
+.lk{
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+}
+td,tr,th{
+    border: 1px solid white;
+    align-items: center ;
+    text-align: center;
+}
